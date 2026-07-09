@@ -1,0 +1,15 @@
+{
+	"name": "azurefactorysharnam",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "47dd3daf-4f6d-4886-b827-3bb794cec3aa",
+		"tenantId": "62fd7953-0342-4e1d-bd70-038a68252e5e"
+	}
+}
