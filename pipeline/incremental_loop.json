@@ -328,8 +328,7 @@
 						"dependencyConditions": [
 							"Skipped",
 							"Failed",
-							"Succeeded",
-							"Completed"
+							"Succeeded"
 						]
 					}
 				],
