@@ -1,0 +1,15 @@
+# Databricks deployment state
+.bundle/
+.databricks/
+
+# Environment / secrets
+.env
+*.pem
+*.key
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
