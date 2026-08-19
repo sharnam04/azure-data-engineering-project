@@ -850,23 +850,7 @@ This project demonstrates practical experience with:
 - **Logic Apps**
 - **Databricks Asset Bundles**
 - **Incremental testing and validation**
-
----
-
-## 🧠 Interview Explanation
-
-### In 30 seconds
-
-> I built an end-to-end Azure data engineering lakehouse pipeline using Azure SQL, Azure Data Factory, ADLS Gen2 and Databricks. ADF performs metadata-driven incremental ingestion into the Bronze layer using watermarks. Databricks Auto Loader processes Bronze files into Silver Delta tables using PySpark. For Gold, I use Lakeflow Declarative Pipelines with Auto CDC, implementing SCD Type 2 for DimUser, DimTrack and DimDate and SCD Type 1 for FactStream. I also implemented data quality expectations, Unity Catalog governance, Managed Identity-based storage access, Jinja-driven ELT, Logic Apps notifications and Databricks Asset Bundles for deployment.
-
-### If asked "Why this architecture?"
-
-> The architecture separates ingestion, transformation and business-ready data into clear layers. Incremental ingestion reduces unnecessary source reads and data movement, Bronze preserves the incoming data, Silver provides cleaned Delta-based datasets, and Gold contains analytics-ready dimensions and facts with appropriate historical processing.
-
-### If asked "How is the pipeline executed?"
-
-> At the current stage, I run the workflow sequentially: ADF performs incremental ingestion into Bronze, the Silver Databricks notebook processes the Bronze data, and the Gold Lakeflow pipeline processes the Silver tables. The next improvement would be to orchestrate those stages end-to-end.
-
+  
 ---
 
 ## 👨‍💻 Author
